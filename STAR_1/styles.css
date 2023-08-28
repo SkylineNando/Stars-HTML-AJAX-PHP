@@ -1,0 +1,31 @@
+.rating {
+    text-align: center;
+    margin: 20px;
+}
+
+.stars {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url('star.png');
+    display: inline-block;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.rating input:checked ~ label {
+    background-image: url('star-filled.png');
+}
+
+.rating label:hover {
+    background-image: url('star-filled.png');
+}
